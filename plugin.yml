@@ -1,0 +1,35 @@
+name: BetterRTPBedrock
+main: icrafts\betterrtpbedrock\BetterRTPBedrock
+version: 1.0.0
+api: 5.0.0
+author: iCrafts
+description: BetterRTP-style random teleport plugin for PocketMine-MP
+
+commands:
+  betterrtp:
+    description: Randomly teleport to a location
+    usage: "/rtp help"
+    aliases: [brtp, rtp, randomtp, wild, wildtp]
+    permission: betterrtp.use
+
+permissions:
+  betterrtp.use:
+    default: true
+  betterrtp.world:
+    default: op
+  betterrtp.player:
+    default: op
+  betterrtp.reload:
+    default: op
+  betterrtp.info:
+    default: op
+  betterrtp.version:
+    default: op
+  betterrtp.world.*:
+    default: op
+  betterrtp.bypass.cooldown:
+    default: op
+  betterrtp.bypass.delay:
+    default: op
+  betterrtp.*:
+    default: op

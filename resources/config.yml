@@ -1,0 +1,93 @@
+Language-File: "en"
+
+Settings:
+  Debugger: false
+  MaxAttempts: 32
+  RtpOnFirstJoin:
+    Enabled: false
+    World: "world"
+    SetAsRespawn: false
+  Cooldown:
+    Enabled: true
+    Time: 600
+    PerWorld: false
+  Delay:
+    Enabled: true
+    Time: 5
+    CancelOnMove: true
+
+Default:
+  MaxRadius: 1000
+  MinRadius: 10
+  CenterX: 0
+  CenterZ: 0
+  Shape: "square"
+  MaxY: 320
+  MinY: -64
+
+BlacklistedBlocks:
+  - water
+  - flowing_water
+  - lava
+  - flowing_lava
+  - cactus
+  - leaves
+  - air
+  - bedrock
+  - fire
+  - magma
+
+DisabledWorlds:
+  - prison
+  - creative
+
+CustomWorlds:
+  world_nether:
+    MaxRadius: 1200
+    MinRadius: 40
+    CenterX: 0
+    CenterZ: 0
+    Shape: "square"
+    MaxY: 120
+    MinY: 32
+    Cooldown: 60
+  world_the_end:
+    MaxRadius: 1500
+    MinRadius: 50
+    CenterX: 0
+    CenterZ: 0
+    Shape: "circle"
+    MaxY: 120
+    MinY: 0
+
+Overrides:
+  master_world: "world"
+  creative_world: "world"
+
+Messages:
+  Prefix: "&bBetterRTP &8| "
+  NoPermission: "&cYou do not have permission."
+  MustBePlayer: "&cOnly players can use this command."
+  WorldDisabled: "&cRTP is disabled in this world."
+  WorldNotFound: "&cWorld &f%world% &cnot found."
+  PlayerNotFound: "&cPlayer &f%player% &cnot found."
+  NoSafeLocation: "&cCould not find a safe location after &f%attempts%&c attempts."
+  Teleporting: "&7Searching safe location in &f%world%&7..."
+  Teleported: "&aTeleported to &f%x%&a, &f%y%&a, &f%z% &ain &f%world%&a."
+  TeleportedTitle: "&aTeleported"
+  TeleportedSubtitle: "&fX: %x%  Y: %y%  Z: %z% &7| &f%world%"
+  TeleportedActionbar: "&7Safe location found"
+  TeleportedTitleFadeIn: 10
+  TeleportedTitleStay: 40
+  TeleportedTitleFadeOut: 10
+  Cooldown: "&cYou must wait &f%seconds%s &cbefore using RTP again."
+  DelayStarted: "&7Teleporting in &f%seconds%s&7. Do not move."
+  DelayCancelledMove: "&cTeleport cancelled because you moved."
+  Reloaded: "&aConfiguration reloaded."
+  Version: "&aBetterRTPBedrock version &f%version%"
+  Info:
+    - "&eRTP settings for world &f%world%"
+    - "&7Shape: &f%shape%"
+    - "&7Center: &f%center_x%&7, &f%center_z%"
+    - "&7Radius: &f%min_radius%&7 - &f%max_radius%"
+    - "&7Y-range: &f%min_y%&7 - &f%max_y%"
